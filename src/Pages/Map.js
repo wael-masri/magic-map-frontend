@@ -2,7 +2,6 @@ import React,{useState,useEffect} from 'react'
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import RoomIcon from "@mui/icons-material/Room";
 import StarIcon from "@mui/icons-material/Star";
-import moment from "moment";
 import axios from "axios";
  const MapPage = () => {
     const [pins, setPins] = useState([]);
@@ -110,7 +109,6 @@ console.log(process.env.REACT_APP_URL_BACKEND)
            </div>
            <label>Information</label>
            <span className="username">Created By <b>{p.username}</b> </span>
-           <span className="date">{moment(p.createdAt)}</span>
          </div>
        </Popup>
          }
