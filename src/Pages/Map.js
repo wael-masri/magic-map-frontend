@@ -13,9 +13,9 @@ import axios from "axios";
   const [viewport, setViewport] = useState({
     width: "100%",
     height: "100vh",
-    latitude: 47.040182,
-    longitude: 17.071727,
-    zoom: 4,
+    latitude: 38.963745,
+    longitude: 35.243322,
+    zoom: 5
   });
   
   useEffect(() => {
